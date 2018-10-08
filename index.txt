@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>SIMULARO NEXTIONS</title>
+        <link rel ="styesheet" type="text/css" href="css/estilos.css">   
+    </head>
+    <body>
+       <div id="principal">
+          <header>
+            <div id="logo">
+                 <h3>SIMULADOR <a href="#">TICNEXTIONS.COM</a></h3>
+            </div>
+              
+               <form name="calculator">
+            
+               <script> 
+
+         function varios(){ 
+            <!-- Suma --> 
+        n1 = parseFloat(calculator.k.value); 
+        n2 = parseFloat(calculator.t.value); 
+        n3 = parseFloat(calculator.c.value);
+          calculator.resDiario.value=(n1+(n1*((n2/26)*n3))/100)/n3;
+          calculator.resSemanal.value=(n1+(n1*((n2/4)*n3))/100)/n3;
+          calculator.resQuincenal.value=(n1+(n1*((n2/2)*n3))/100)/n3;
+          
+                } 
+        </script> 
+                <p>Haz algun calculo para ver el resultado.</p>
+                MONTO--: <input type="textfield" name="k" value="">
+                <br>TASA-----: <input type="textfield" name="t" value="">
+                 <br>CUOTAS-: <input type="textfield" name="c" value="">
+                 <br><br><input type="button" value="CALCULAR" onClick="varios()">
+                 <input type="reset" value="BORRAR">
+                <br><br>MONTO DIARIO-------: <input type="textfield" name="resDiario" value="">
+                <br>MONTO SEMANAL---: <input type="textfield" name="resSemanal" value="">
+               <br>MONTO QUINCENAL: <input type="textfield" name="resQuincenal" value="">
+            </form>
+
+                <script> 
+
+                    function varios(){ 
+                    <!-- Suma --> 
+                    n1 = parseFloat(calculator.k.value); 
+                    n2 = parseFloat(calculator.t.value); 
+                    n3 = parseFloat(calculator.c.value);
+                    calculator.resDiario.value=(n1+(n1*((n2/26)*n3))/100)/n3;
+                    calculator.resSemanal.value=(n1+(n1*((n2/4)*n3))/100)/n3;
+                    calculator.resQuincenal.value=(n1+(n1*((n2/2)*n3))/100)/n3;
+          
+                    } 
+                </script> 
+          </header>
+           <section id="slide">
+               <img src="img/sembrando.jpg">
+           </section>
+       </div>
+    </body>
+</html>
